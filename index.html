@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Biodata System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="image/biodata.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="splash">
+        <h1 class="fade-in">Welcome to My Biodata System!</h1>
+    </div>
+    <script>
+        const splash = document.querySelector('.splash');
+        document.addEventListener('DOMContentLoaded', (e)=>{
+            setTimeout(()=>{
+                splash.classList.add('display-none')
+            },2000);
+        });
+    </script>
+    <div class="header">
+        <!-- <h1>My Biodata System</h1> -->
+        <div class="mobile-container">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+              <a href="">My Biodata System</a>
+              <div id="myLinks">
+                <a href="eduwork.html" target="iframe_a">Education & Work Experience</a>
+                <a href="skills.html" target="iframe_a">Skills</a>
+                <a href="interest.html" target="iframe_a">Interest & Hobby</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+        <div class="desktop-container">
+            <ul id="myDIV">
+                <li><a class="btn active" href="">Home</a></li>
+                <li><a class="btn" href="eduwork.html" target="iframe_a">Education & Work Experience</a></li>
+                <li><a class="btn" href="skills.html" target="iframe_a">Skills</a></li>
+                <li><a class="btn" href="interest.html" target="iframe_a">Interest & Hobby</a></li>
+            </ul>
+            <script>
+                // Add active class to the current button (highlight it)
+                var header = document.getElementById("myDIV");
+                var btns = header.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                    });
+                }
+            </script>
+        </div>  
+    </div>
+    
+    <div class="main">
+        <div class="submain1">
+            <br>
+            <h2 style="text-align: center;">PROFESSIONAL DETAILS</h2>
+            <br>
+            <hr>
+            <div class="profile-pic">
+                <img src="image/DSC_0378.jpg" alt="profilepic" width="200">
+            </div>
+            <br>
+            <hr style="width: 70%; margin: auto;">
+            <br>
+            <table>
+                <tr>
+                    <th>Full Name:</th>
+                    <td>Tan Jun Lin</td>
+                </tr>
+                <tr>
+                    <th>NickName:</th>
+                    <td>Tommy</td>
+                </tr>
+                <tr>
+                    <th>Age:</th>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <th>Location:</th>
+                    <td>Kulim, Kedah</td>
+                </tr>
+            </table>
+            <br><hr style="width: 70%; margin: auto;"><br>
+            <div class="SocialMedia">
+                <h3>Connect with us:</h3>
+                <br>
+                <div class="SocialMediaTab">
+                    <a href="https://www.facebook.com/tommyyuan0215/"><img src="image/Facebook_Logo_(2019).png" alt="facebook" width="25px" height="25px"></a>
+                    <a href="https://www.instagram.com/tommyyuan0215/"><img src="image/240px-Instagram_icon.png" alt="insta" width="25px" height="25px"></a>
+                    <a href="https://github.com/TommyYuan0215"><img src="image/github.png" alt="github" width="25px" height="25px"></a>
+                    <a href="http://wa.me//60162510376"><img src="image/Whatsapp.png" alt="whatsapp" width="25px" height="25px"></a>
+                    <a href="https://www.linkedin.com/in/tommy-tan-6ba645255/"><img src="image/linkedin.png" alt="linkedin" width="25px" height="25px"></a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <iframe class="submain2" name="iframe_a" src="main.html" frameborder="0"></iframe>
+    </div>  
+
+    <div class="footer">
+        <p>Copyright: tanjunlin0215@student.usm.my | 2022</p>
+    </div>
+</body>
+</html>
