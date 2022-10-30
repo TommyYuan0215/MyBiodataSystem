@@ -1,0 +1,52 @@
+.main table {
+    margin: 20px 0;
+    padding: 0 2em;
+}
+
+.main th,tr {
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 2em;
+}
+
+.main th {
+    text-align: left;
+}
+
+.main h2 {
+    margin-left: 0.5em;
+}
+
+.main h3 {
+    text-align: center;
+}
+
+.main .bio {
+    padding: 1em;
+    margin: 2% 3%;
+    border: 2px solid black;
+    border-style: dashed;
+}
+
+.main .bio p {
+    margin: 1% 2%;
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .main table, th, td, tr { 
+        border: 1px solid black;
+        margin: 0;
+        padding: 0;
+		display: block;
+        text-align: center; 
+	}
+
+    .main table, tr {
+        border: none;
+    }
+
+    .main th,td {
+        padding: 10px;
+    }
+}

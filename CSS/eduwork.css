@@ -1,0 +1,9 @@
+.container {
+    margin: 2% 3%;
+    padding: 0 0.5em;
+    border: 1px solid black;
+}
+
+.main h2 {
+    margin-left: 0.75em;
+}

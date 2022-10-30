@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="CSS/skills.css" >
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer",
+            {
+                theme: "light2" ,
+                title:{
+                    text: "Technical Skills based on percentage"
+                },
+                legend: {
+                    maxWidth: 350,
+                    itemWidth: 120
+                },
+                data: [
+                {
+                    type: "pie",
+                    showInLegend: true,
+                    legendText: "{indexLabel}",
+                    dataPoints: [
+                        { y: 75, indexLabel: "C++ without OOP" },
+                        { y: 70, indexLabel: "Python without OOP" },
+                        { y: 70, indexLabel: "Visual Basic" },
+                        { y: 60, indexLabel: "Java"},
+                        { y: 85, indexLabel: "PHP" },
+                        { y: 90, indexLabel: "MySQL"}
+                    ]
+                }   
+                ]
+            });
+            chart.render();
+        }
+        </script>
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+    <div class="skills">
+        <h2>Skills</h2>
+        <hr>
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        <br><hr style="margin:auto" width="90%">
+        <div class="basics">
+            <p>Basic Skills</h1>
+            <ul>
+                <li>Able to work in team.</li>
+                <li>Problem-solving.</li>
+                <li>Proficient in Microsoft Office 
+                    including Word, Excel, and 
+                    PowerPoint.</li>
+                <li>Have experience in Adobe 
+                    Photoshop and Adobe 
+                    Premiere.</li>
+                <li>Know a lot about Computer Specification</li>
+                <li>Fast Learner</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
