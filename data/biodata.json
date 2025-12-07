@@ -2,112 +2,280 @@
   "profile": {
     "name": "Tan Jun Lin",
     "nickname": "Tommy",
-    "title": "Computer Science Student",
-    "age": 21,
+    "title": "Computer Science (Intelligent Computing) Graduate",
     "location": "Kulim, Kedah",
-    "bio": "Hello everyone, my name is Tan Jun Lin. I'm a first-year Computer Science student who graduated from Politeknik Seberang Perai. I'm passionate about programming, problem-solving, and computer specifications.",
+    "bio": "Versatile Computer Science graduate specializing in Intelligent Computing and AI. Strong in full‑stack development (Flask, React.js, PHP) and machine learning (TensorFlow, transfer learning, CNNs). Experienced building data‑driven systems, IoT solutions and production dashboards; eager to contribute technical skills in applied AI and software engineering roles.",
     "image": "profile.jpg"
   },
   "contact": {
     "phone": "+60 16-251 0376",
-    "phoneAlt": "+60 10-860 8917",
+    "phoneAlt": "+60 13-802 0376",
     "email": "tanjunlin0215@student.usm.my",
-    "emailAlt": ["tanjunlin0215@outlook.com", "tommytanjunlin@gmail.com"],
-    "address": "1367, JALAN SELASIH 4, TAMAN SELASIH, 09000 KULIM, KEDAH",
-    "birthDate": "15 February 2001"
+    "emailAlt": [
+      "tanjunlin0215@outlook.com",
+      "tommytanjunlin@gmail.com"
+    ],
+    "address": "1367, Jalan Selasih 4, Taman Selasih, 09000 Kulim, Kedah",
+    "birthDate": "2001-02-15"
   },
   "social": {
-    "facebook": "https://www.facebook.com/tommyyuan0215/",
-    "instagram": "https://www.instagram.com/tommyyuan0215/",
+    "linkedin": "https://www.linkedin.com/in/tommy-tan-6ba645255/",
     "github": "https://github.com/TommyYuan0215",
-    "whatsapp": "http://wa.me/60162510376",
-    "linkedin": "https://www.linkedin.com/in/tommy-tan-6ba645255/"
+    "facebook": "https://www.facebook.com/tanjunlin0215/",
+    "instagram": "https://www.instagram.com/tanjunlin0215/",
+    "whatsapp": "http://wa.me/60162510376"
   },
+  "summary": "Computer Science graduate (Intelligent Computing) with hands‑on experience in AI/ML (TensorFlow, OpenCV), full‑stack web apps (Flask, React.js, PHP), IoT systems and production dashboards. Proven record building and deploying engagement-detection and edge/cloud solutions, plus production-support tooling in R&D environments.",
   "skills": {
     "technical": [
-      { "name": "C++ without OOP", "percentage": 75 },
-      { "name": "Python without OOP", "percentage": 70 },
-      { "name": "Visual Basic", "percentage": 70 },
-      { "name": "Java", "percentage": 60 },
-      { "name": "PHP", "percentage": 85 },
-      { "name": "MySQL", "percentage": 90 }
+      { "name": "TensorFlow", "level": "proficient" },
+      { "name": "OpenCV", "level": "proficient" },
+      { "name": "Transfer Learning / CNNs", "level": "proficient" },
+      { "name": "Python", "level": "advanced" },
+      { "name": "Flask", "level": "proficient" },
+      { "name": "React.js", "level": "proficient" },
+      { "name": "PHP", "level": "proficient" },
+      { "name": "HTML/CSS/JavaScript/jQuery", "level": "proficient" },
+      { "name": "MySQL / Oracle SQL", "level": "proficient" },
+      { "name": "Arduino / MQTT", "level": "proficient" },
+      { "name": "Power BI / Power Automate", "level": "intermediate" },
+      { "name": "Git / Version Control", "level": "proficient" },
+      { "name": "C++ / Java", "level": "intermediate" }
     ],
-    "basic": [
-      "Able to work in team",
-      "Problem-solving",
-      "Proficient in Microsoft Office (Word, Excel, PowerPoint)",
-      "Experience in Adobe Photoshop and Adobe Premiere",
-      "Computer Specification Knowledge",
-      "Fast Learner"
+    "soft": [
+      "Analytical problem solving & critical thinking",
+      "Technical adaptability & continuous learning",
+      "Teamwork and communication",
+      "Microsoft Office (Word, Excel, PowerPoint)",
+      "Basic video editing (Photoshop, Premiere, Filmora)"
     ]
   },
   "education": [
     {
-      "school": "UNIVERSITI SAINS MALAYSIA",
-      "period": "2021 - Present",
-      "degree": "Bachelor in Computer Science"
-    },
-    {
-      "school": "POLITEKNIK SEBERANG PERAI",
-      "period": "2019 - 2021",
-      "degree": "DIPLOMA IN DIGITAL TECHNOLOGY",
-      "cgpa": "3.90",
-      "coursework": [
-        "Web Programming & Web Design Technology",
-        "Databases Design",
-        "Integrative Programming Technologies",
-        "Object Oriented Programming",
-        "Visual Basic Programming",
-        "Python Programming",
-        "Programming Fundamentals",
-        "Mobile Application Development",
-        "Digital Multimedia"
+      "school": "University of Science Malaysia (USM)",
+      "period": "2022 - Present",
+      "degree": "Bachelor in Computer Science (Intelligent Computing) with Honours",
+      "cgpa": "3.47",
+      "highlights": [
+        {
+          "title": "AI-Driven Student Participation Tracker (Final Year Project)",
+          "technologies": [
+            "TensorFlow",
+            "OpenCV",
+            "Flask",
+            "React.js"
+          ],
+          "description": "Designed and implemented an AI-based engagement detection system for virtual classes. Trained and fine‑tuned a CNN using transfer learning on the DAiSEE dataset to classify engagement; integrated face detection to extract facial features for improved accuracy. Built a Flask backend and React frontend to present real‑time participation metrics and classroom analytics. Focus: model accuracy improvement, maintainable full‑stack architecture and UX for instructors."
+        },
+        {
+          "title": "IoT-Based Smart Aquaculture System with AI-Driven Leaf Detection",
+          "technologies": [
+            "Arduino",
+            "V-ONE Cloud",
+            "Python",
+            "MQTT",
+            "Pre-trained CNN"
+          ],
+          "description": "Developed an IoT solution for environmental monitoring and automated irrigation using sensors (soil moisture, DHT11) and actuators. Integrated a pre-trained CNN to detect plant health (healthy / powdery / rust) and trigger alerts. Implemented edge processing (Maker Feather AIoT S3) to reduce latency and enable operation on low-connectivity sites; built a cloud-connected dashboard with V-ONE for monitoring, alerts and automation."
+        }
       ]
     },
     {
-      "school": "CHIO MIN SECONDARY SCHOOL, KULIM, KEDAH",
-      "period": "2014 - 2018",
+      "school": "Politeknik Seberang Perai",
+      "period": "2019 - 2021",
+      "degree": "Diploma in Digital Technology (Software Development)",
+      "cgpa": "3.90",
       "coursework": [
-        "Web Design using Dreamweaver",
-        "Create databases using phpMyAdmin",
-        "Computer Science Subject (SPM: A)"
+        "Web Programming & Web Design",
+        "Database Design",
+        "Object Oriented Programming",
+        "Visual Basic",
+        "Python Programming",
+        "Mobile App Development",
+        "Digital Multimedia"
+      ],
+      "project": {
+        "title": "eLD Lapor Diri (New Staff Registration System)",
+        "description": "Implemented a web-based staff registration system (PHP, HTML, CSS, JavaScript, jQuery) to automate onboarding. Replaced handwritten forms with digital workflows to improve accuracy, accessibility and processing time; developed responsive front-end and PHP backend connected to MySQL."
+      }
+    },
+    {
+      "school": "Chio Min Secondary School, Kulim",
+      "period": "2014 - 2018",
+      "notes": [
+        "SPM Computer Science: A",
+        "Basics: Dreamweaver, phpMyAdmin"
       ]
     }
   ],
   "experience": [
     {
-      "company": "INNO INSTRUMENT SDN.BHD",
-      "position": "R&D Department Intern",
-      "period": "2021/9/30 - 2022/2/11",
-      "duties": [
-        "Develop 4 In House Systems using PHP",
-        "Manage company server and databases",
-        "Gather information and sketch system flow"
+      "company": "Intel Products (M) Sdn. Bhd.",
+      "position": "Intern — SIMS Mechanical Integration Engineering",
+      "period": "2024-03-11 to 2024-08-28",
+      "department": "SIMS Mechanical Integration Engineering",
+      "responsibilities": [
+        "Enhanced Modbus Digital Air Leak Tester application to improve system stability and reliability over previous versions.",
+        "Contributed to development of MAI Tracking System and Document Compilation Tools to streamline production workflows and reduce manual effort.",
+        "Participated in AI MAI project to automate Manufacturing Assembly Instructions (MAI) using AI techniques.",
+        "Developed PFMEA dashboard and Power Platform automation (Power BI / Power Automate) to support production risk assessment and decision-making."
+      ],
+      "achievements": [
+        "Delivered dashboards and automation that improved visibility and reduced time for risk assessment.",
+        "Improved application reliability for mechanical testing tools."
       ]
     },
     {
-      "company": "HAI ZHENG TRADING",
-      "position": "Sales Assistant",
-      "period": "2014 - 2020",
-      "duties": [
-        "Understand customer needs and provide suitable products",
-        "Pack products and ensure good condition",
-        "Manage online orders"
+      "company": "Inno Instrument Sdn. Bhd.",
+      "position": "R&D Intern",
+      "period": "2021-09-30 to 2022-02-11",
+      "department": "R&D",
+      "responsibilities": [
+        "Designed and implemented four in-house web applications (PHP, MySQL, HTML, CSS, JavaScript) for claims management, lunch ordering, COVID tracking and internal tools.",
+        "Managed company servers and databases, handled backups and basic administration to ensure uptime.",
+        "Gathered requirements, produced system flows and documentation; implemented front-end and back-end features."
+      ],
+      "achievements": [
+        "Delivered multiple internal systems that improved operational efficiency and record-keeping."
+      ]
+    },
+    {
+      "company": "Hai Zheng Trading",
+      "position": "Sales Assistant (part-time)",
+      "period": "2014 - 2023",
+      "responsibilities": [
+        "Assisted customers in product selection and order processing.",
+        "Packed and ensured products were in good condition for delivery.",
+        "Managed online orders and basic customer service tasks."
       ]
     }
   ],
+  "projects": [
+    {
+      "title": "AI-Driven Student Participation Tracker",
+      "role": "Lead developer (FYP)",
+      "period": "2024",
+      "technologies": [
+        "TensorFlow",
+        "OpenCV",
+        "DAiSEE dataset",
+        "Flask",
+        "React.js"
+      ],
+      "description": "Full-stack engagement detection system that uses transfer-learning CNNs to classify student engagement levels from classroom video frames. Implemented face detection to extract facial features and fused those with CNN outputs to increase recognition accuracy. Built REST APIs in Flask, a React frontend for instructors, and created evaluation pipelines for model fine-tuning. Emphasis on reproducible training, model monitoring and UX for real-time classroom feedback.",
+      "notes": [
+        "Used transfer learning to adapt pre-trained CNN weights for engagement classification.",
+        "Implemented data pre-processing pipelines and augmentation to improve generalization.",
+        "Provided performance metrics and user-facing visualizations for instructors."
+      ]
+    },
+    {
+      "title": "IoT-Based Smart Aquaculture / Leaf Detection System",
+      "role": "Systems developer",
+      "period": "2023",
+      "technologies": [
+        "Arduino",
+        "MQTT",
+        "Python",
+        "Pre-trained CNN",
+        "V-ONE Cloud"
+      ],
+      "description": "End-to-end IoT solution for environmental monitoring and automated irrigation. Collected sensor data (soil moisture, DHT11) via Arduino devices, transmitted via MQTT, performed edge inference using a pre-trained CNN to detect plant health, and presented results on a V-ONE cloud dashboard. Implemented actuator control for irrigation and alerting for abnormal conditions.",
+      "notes": [
+        "Designed edge compute pipeline to reduce latency and network dependency.",
+        "Integrated cloud dashboard for real-time visualization and alerts.",
+        "Improved irrigation scheduling and reduced manual supervision needs."
+      ]
+    },
+    {
+      "title": "In-house Web Systems (Inno Instrument)",
+      "role": "Full-stack developer",
+      "period": "2021",
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "HTML/CSS",
+        "JavaScript",
+        "jQuery"
+      ],
+      "description": "Developed multiple internal applications such as a claims management system, staff lunch ordering and a COVID test tracking tool. Responsible for requirements gathering, UI implementation, server-side logic and database integration to automate manual processes.",
+      "notes": [
+        "Improved data accuracy and processing time for internal administrative tasks.",
+        "Deployed systems on company servers and maintained databases."
+      ]
+    }
+  ],
+  "awards_extracurricular": {
+    "awards": [
+      {
+        "title": "Academic Fiesta @ USM",
+        "year": 2025,
+        "level": "Silver"
+      },
+      {
+        "title": "PIXEL USM",
+        "year": 2025,
+        "level": "Silver"
+      },
+      {
+        "title": "Fuel Asia",
+        "year": 2023,
+        "note": "Top 10 Awards"
+      },
+      {
+        "title": "KitaHack / Varsity Hackathon 2023 (GDG DevHack)",
+        "year": 2023,
+        "note": "Participant"
+      }
+    ],
+    "extracurricular": [
+      "AI-Driven Student Participation Tracker (FYP)",
+      "Pixel USM participation",
+      "Hackathon participant (KitaHack / GDG DevHack)"
+    ]
+  },
+  "languages": [
+    {
+      "language": "Chinese",
+      "proficiency": "Native / Bilingual"
+    },
+    {
+      "language": "English",
+      "proficiency": "Professional working proficiency"
+    },
+    {
+      "language": "Malay",
+      "proficiency": "Full professional proficiency"
+    },
+    {
+      "language": "Hokkien",
+      "proficiency": "Full professional proficiency"
+    },
+    {
+      "language": "Hakka",
+      "proficiency": "Professional working proficiency"
+    }
+  ],
+  "soft_skills": [
+    "Analytical problem solving",
+    "Critical thinking",
+    "Teamwork & communication",
+    "Fast learner",
+    "Technical adaptability"
+  ],
   "interests": [
     "Photography",
-    "Assemble & Disassemble Computer",
+    "Assemble & disassemble computer hardware",
     "Programming",
-    "Problem Solving (Maths)",
+    "Problem solving (maths)",
     "Drawing"
   ],
   "hobbies": [
-    "Playing Badminton",
-    "Playing Games",
-    "Listening to Songs",
-    "Watching Movies",
+    "Badminton",
+    "Gaming",
+    "Listening to music",
+    "Watching movies",
     "Singing"
-  ]
+  ],
+  "last_updated": "2025-12-07"
 }
