@@ -1,3 +1,25 @@
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+const htmlElement = document.documentElement;
+
+// Check if user has saved preference
+if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    darkModeToggle.checked = true;
+}
+
+// Toggle dark mode
+darkModeToggle.addEventListener('change', () => {
+    if (darkModeToggle.checked) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+    }
+});
+
+// Load biodata
 fetch('./data/biodata.json')
     .then(response => response.json())
     .then(data => {
@@ -30,6 +52,8 @@ function populateAbout(data) {
 
 function populateSkills(data) {
     const skillsList = document.getElementById('skillsList');
+    skillsList.innerHTML = '';
+    
     data.skills.technical.forEach(skill => {
         const skillCard = document.createElement('div');
         skillCard.className = 'skill-card';
@@ -46,6 +70,8 @@ function populateSkills(data) {
     });
 
     const basicSkillsList = document.getElementById('basicSkillsList');
+    basicSkillsList.innerHTML = '';
+    
     data.skills.basic.forEach(skill => {
         const li = document.createElement('li');
         li.textContent = skill;
@@ -55,6 +81,8 @@ function populateSkills(data) {
 
 function populateEducation(data) {
     const educationList = document.getElementById('educationList');
+    educationList.innerHTML = '';
+    
     data.education.forEach(edu => {
         const eduItem = document.createElement('div');
         eduItem.className = 'timeline-item';
@@ -75,14 +103,20 @@ function populateEducation(data) {
 
 function populateExperience(data) {
     const experienceList = document.getElementById('experienceList');
+    experienceList.innerHTML = '';
+    
     data.experience.forEach(exp => {
         const expItem = document.createElement('div');
         expItem.className = 'timeline-item';
+        const dutiesHTML = exp.duties && exp.duties.length > 0 
+            ? `<ul>${exp.duties.map(d => `<li>${d}</li>`).join('')}</ul>`
+            : '<p><em>Details not provided</em></p>';
+        
         expItem.innerHTML = `
             <h3>${exp.company}</h3>
             <div class="timeline-period">${exp.period}</div>
             <p><strong>${exp.position}</strong></p>
-            <ul>${exp.duties.map(d => `<li>${d}</li>`).join('')}</ul>
+            ${dutiesHTML}
         `;
         experienceList.appendChild(expItem);
     });
@@ -91,6 +125,9 @@ function populateExperience(data) {
 function populateInterests(data) {
     const interestsList = document.getElementById('interestsList');
     const hobbiesList = document.getElementById('hobbiesList');
+    
+    interestsList.innerHTML = '';
+    hobbiesList.innerHTML = '';
     
     data.interests.forEach(interest => {
         const li = document.createElement('li');
@@ -116,7 +153,15 @@ function populateSocial(data) {
 // Mobile menu toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
 
 hamburger.addEventListener('click', () => {
-    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+    navMenu.classList.toggle('active');
+});
+
+// Close menu when clicking on a link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
 });
