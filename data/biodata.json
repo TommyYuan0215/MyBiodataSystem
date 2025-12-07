@@ -65,7 +65,14 @@
             "Flask",
             "React.js"
           ],
-          "description": "Designed and implemented an AI-based engagement detection system for virtual classes. Trained and fine‑tuned a CNN using transfer learning on the DAiSEE dataset to classify engagement; integrated face detection to extract facial features for improved accuracy. Built a Flask backend and React frontend to present real‑time participation metrics and classroom analytics. Focus: model accuracy improvement, maintainable full‑stack architecture and UX for instructors."
+          "description_points": [
+            "Developed an AI-based system to track student participation and engagement during virtual classes.",
+            "Trained and fine-tuned a CNN using transfer learning on the DAiSEE dataset to classify engagement levels.",
+            "Integrated a face detection module to extract facial features for improved recognition accuracy.",
+            "Built a Flask backend and React frontend to present real-time participation metrics and classroom analytics.",
+            "Implemented data preprocessing, augmentation and evaluation pipelines to improve generalization and monitor model performance.",
+            "Focused on maintainable full-stack architecture and UX for instructors to view live feedback."
+          ]
         },
         {
           "title": "IoT-Based Smart Aquaculture System with AI-Driven Leaf Detection",
@@ -76,7 +83,13 @@
             "MQTT",
             "Pre-trained CNN"
           ],
-          "description": "Developed an IoT solution for environmental monitoring and automated irrigation using sensors (soil moisture, DHT11) and actuators. Integrated a pre-trained CNN to detect plant health (healthy / powdery / rust) and trigger alerts. Implemented edge processing (Maker Feather AIoT S3) to reduce latency and enable operation on low-connectivity sites; built a cloud-connected dashboard with V-ONE for monitoring, alerts and automation."
+          "description_points": [
+            "Designed and implemented an IoT monitoring system using soil moisture sensors, DHT11 and actuators for automated irrigation.",
+            "Integrated a pre-trained CNN to detect plant health states (healthy, powdery, rust) and trigger alerts.",
+            "Implemented edge processing using Maker Feather AIoT S3 to run inference locally and reduce latency.",
+            "Transmitted sensor and inference data via MQTT to V-ONE Cloud and built dashboards for real-time visualization and alerts.",
+            "Enabled actuator control for irrigation scheduling and automated alerts for abnormal conditions."
+          ]
         }
       ]
     },

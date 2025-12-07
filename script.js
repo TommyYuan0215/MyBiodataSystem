@@ -42,6 +42,7 @@ fetch('./data/biodata.json')
         populateHero(data);
         populateAbout(data);
         populateSkills(data);
+        populateBasicSkills(data);
         populateEducation(data);
         populateExperience(data);
         populateInterests(data);
@@ -88,12 +89,9 @@ function populateSkills(data) {
     const technical = data.skills?.technical || [];
     technical.forEach(skill => {
         const name = skill.name || skill.title || 'Skill';
-        // get numeric percent: prefer explicit "percentage", else map from "level"
         const percent = (typeof skill.percentage === 'number')
             ? skill.percentage
             : mapLevelToPercent(skill.level || skill.levelname || skill.levels);
-
-        // text to display at right: prefer explicit percentage if provided, else show level text
         const rightText = (typeof skill.percentage === 'number')
             ? `${skill.percentage}%`
             : (skill.level ? skill.level : `${percent}%`);
@@ -111,11 +109,13 @@ function populateSkills(data) {
         `;
         skillsList.appendChild(skillCard);
     });
+}
 
-    // basic / soft skills: support multiple possible keys in JSON
+function populateBasicSkills(data) {
     const basicSkillsList = document.getElementById('basicSkillsList');
     if (!basicSkillsList) return;
     basicSkillsList.innerHTML = '';
+    // prefer explicit 'basic' array; fall back to skills.soft
     const basicArray = data.skills?.basic || data.skills?.soft || data.skills?.other || [];
     if (Array.isArray(basicArray)) {
         basicArray.forEach(skill => {
@@ -139,9 +139,23 @@ function populateEducation(data) {
         if (edu.coursework && Array.isArray(edu.coursework)) {
             courseHTML = `<ul>${edu.coursework.map(c => `<li>${c}</li>`).join('')}</ul>`;
         }
+
+        // Build highlights: each highlight may now contain description_points (array) or description (string)
         const highlightsHTML = (edu.highlights && Array.isArray(edu.highlights))
-            ? `<div>${edu.highlights.map(h => `<h4>${h.title}</h4><p>${h.description || ''}</p>`).join('')}</div>`
+            ? edu.highlights.map(h => {
+                const title = `<h4>${h.title || ''}</h4>`;
+                let desc = '';
+                if (Array.isArray(h.description_points)) {
+                    desc = `<ul>${h.description_points.map(p => `<li>${p}</li>`).join('')}</ul>`;
+                } else if (Array.isArray(h.description)) {
+                    desc = `<ul>${h.description.map(p => `<li>${p}</li>`).join('')}</ul>`;
+                } else if (h.description) {
+                    desc = `<p>${h.description}</p>`;
+                }
+                return `<div class="edu-highlight">${title}${desc}</div>`;
+            }).join('')
             : '';
+
         eduItem.innerHTML = `
             <h3>${edu.school || ''}</h3>
             <div class="timeline-period">${edu.period || ''}</div>
