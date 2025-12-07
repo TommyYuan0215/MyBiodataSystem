@@ -1,0 +1,113 @@
+{
+  "profile": {
+    "name": "Tan Jun Lin",
+    "nickname": "Tommy",
+    "title": "Computer Science Student",
+    "age": 21,
+    "location": "Kulim, Kedah",
+    "bio": "Hello everyone, my name is Tan Jun Lin. I'm a first-year Computer Science student who graduated from Politeknik Seberang Perai. I'm passionate about programming, problem-solving, and computer specifications.",
+    "image": "profile.jpg"
+  },
+  "contact": {
+    "phone": "+60 16-251 0376",
+    "phoneAlt": "+60 10-860 8917",
+    "email": "tanjunlin0215@student.usm.my",
+    "emailAlt": ["tanjunlin0215@outlook.com", "tommytanjunlin@gmail.com"],
+    "address": "1367, JALAN SELASIH 4, TAMAN SELASIH, 09000 KULIM, KEDAH",
+    "birthDate": "15 February 2001"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/tommyyuan0215/",
+    "instagram": "https://www.instagram.com/tommyyuan0215/",
+    "github": "https://github.com/TommyYuan0215",
+    "whatsapp": "http://wa.me/60162510376",
+    "linkedin": "https://www.linkedin.com/in/tommy-tan-6ba645255/"
+  },
+  "skills": {
+    "technical": [
+      { "name": "C++ without OOP", "percentage": 75 },
+      { "name": "Python without OOP", "percentage": 70 },
+      { "name": "Visual Basic", "percentage": 70 },
+      { "name": "Java", "percentage": 60 },
+      { "name": "PHP", "percentage": 85 },
+      { "name": "MySQL", "percentage": 90 }
+    ],
+    "basic": [
+      "Able to work in team",
+      "Problem-solving",
+      "Proficient in Microsoft Office (Word, Excel, PowerPoint)",
+      "Experience in Adobe Photoshop and Adobe Premiere",
+      "Computer Specification Knowledge",
+      "Fast Learner"
+    ]
+  },
+  "education": [
+    {
+      "school": "UNIVERSITI SAINS MALAYSIA",
+      "period": "2021 - Present",
+      "degree": "Bachelor in Computer Science"
+    },
+    {
+      "school": "POLITEKNIK SEBERANG PERAI",
+      "period": "2019 - 2021",
+      "degree": "DIPLOMA IN DIGITAL TECHNOLOGY",
+      "cgpa": "3.90",
+      "coursework": [
+        "Web Programming & Web Design Technology",
+        "Databases Design",
+        "Integrative Programming Technologies",
+        "Object Oriented Programming",
+        "Visual Basic Programming",
+        "Python Programming",
+        "Programming Fundamentals",
+        "Mobile Application Development",
+        "Digital Multimedia"
+      ]
+    },
+    {
+      "school": "CHIO MIN SECONDARY SCHOOL, KULIM, KEDAH",
+      "period": "2014 - 2018",
+      "coursework": [
+        "Web Design using Dreamweaver",
+        "Create databases using phpMyAdmin",
+        "Computer Science Subject (SPM: A)"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "INNO INSTRUMENT SDN.BHD",
+      "position": "R&D Department Intern",
+      "period": "2021/9/30 - 2022/2/11",
+      "duties": [
+        "Develop 4 In House Systems using PHP",
+        "Manage company server and databases",
+        "Gather information and sketch system flow"
+      ]
+    },
+    {
+      "company": "HAI ZHENG TRADING",
+      "position": "Sales Assistant",
+      "period": "2014 - 2020",
+      "duties": [
+        "Understand customer needs and provide suitable products",
+        "Pack products and ensure good condition",
+        "Manage online orders"
+      ]
+    }
+  ],
+  "interests": [
+    "Photography",
+    "Assemble & Disassemble Computer",
+    "Programming",
+    "Problem Solving (Maths)",
+    "Drawing"
+  ],
+  "hobbies": [
+    "Playing Badminton",
+    "Playing Games",
+    "Listening to Songs",
+    "Watching Movies",
+    "Singing"
+  ]
+}
